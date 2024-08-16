@@ -30,7 +30,7 @@
   export default {
     data() {
       return {
-        textOutput: 'Your text will appear here...',
+        textOutput: 'Your question to ask will appear here!',
         selectedOptions: [],
         options: [
           { value: 'option1', text: 'Option 1' },
@@ -53,7 +53,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    align-self: center;
+    width: 15vw;
+    max-width: 600px; /* Adjust this value as needed */
+    }
   
   .page-title {
     font-size: 2em;
@@ -65,16 +68,19 @@
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 100%; /* Ensure it takes full width of the container */
     text-align: center;
     background-color: #f9f9f9;
-  }
+    box-sizing: border-box; /* Include padding in width calculations */
+    }
   
-  button {
+    button {
     margin-bottom: 10px;
     padding: 10px 20px;
     cursor: pointer;
-  }
+    width: 100%;
+    max-width: 300px;
+    }
   
   .checkbox-group {
     display: flex;
