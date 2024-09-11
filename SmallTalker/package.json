@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore --ignore-pattern /dist/",
     "format": "prettier --write src/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "cd ..; git subtree push --prefix SmallTalker/dist origin gh-pages"
   },
   "dependencies": {
     "vue": "^3.4.29",
