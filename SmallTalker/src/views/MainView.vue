@@ -17,7 +17,7 @@
 
       <!-- Checkboxes for Multi-Select -->
       <label v-for="option in categories" :key="option.value" class="checkbox-label">
-        <input type="checkbox" :value="option.value" v-model="selectedOptions" />
+        <input type="checkbox" :value="option.value" v-model="selectedCategories" />
         {{ option.text }}
       </label>
     </div>
@@ -29,9 +29,9 @@ import questions from '../assets/questions.json'
 export default {
   data() {
     return {
-      questionsDb: questions.questions,
+      questionsDb: questions.categories,
       textOutput: 'Your question to ask will appear here!',
-      selectedOptions: [],
+      selectedCategories: ['tech', 'everydayThings', 'politics'],
       categories: [
         { value: 'tech', text: 'Tech' },
         { value: 'everydayThings', text: 'Everyday Things' },
@@ -44,12 +44,17 @@ export default {
       // Handle button click event
       this.textOutput = `${this.drawQuestion()}`
     },
-    getQuestionNumber(max) {
+    getRandomNumber(max) {
       return Math.floor(Math.random() * max)
     },
     drawQuestion() {
-      var questionsDbLength = this.questionsDb.length
-      var question = this.questionsDb[this.getQuestionNumber(questionsDbLength)]
+      // Select a random category
+      var selectedCategoriesLength = this.selectedCategories.length
+      var category = this.selectedCategories[this.getRandomNumber(selectedCategoriesLength)]
+
+      // Pick a question from the selected category
+      var questionsArrayLength = this.questionsDb[category].length
+      var question = this.questionsDb[category][this.getRandomNumber(questionsArrayLength)]
       return question
     }
   }
