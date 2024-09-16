@@ -29,7 +29,7 @@ import questions from '../assets/questions.json'
 export default {
   data() {
     return {
-      questionsDb: questions.categories,
+      questionsDb: questions,
       textOutput: 'Your question to ask will appear here!',
       selectedCategories: ['tech', 'everydayThings', 'politics'],
       categories: [

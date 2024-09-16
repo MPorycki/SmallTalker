@@ -1,11 +1,9 @@
 {
-  "categories": {
-    "tech": ["What phone are you using?", "What laptop are you using?"],
-    "politics": ["Who were you voting for?"],
-    "everydayThings": [
-      "How do you like the weather today?",
-      "Do you have any pets?",
-      "What were you doing last weekend?"
-    ]
-  }
+  "tech": ["What phone are you using?", "What laptop are you using?"],
+  "politics": ["Who were you voting for?"],
+  "everydayThings": [
+    "How do you like the weather today?",
+    "Do you have any pets?",
+    "What were you doing last weekend?"
+  ]
 }
