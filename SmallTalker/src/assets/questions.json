@@ -1,9 +1,62 @@
 {
-  "tech": ["What phone are you using?", "What laptop are you using?"],
-  "politics": ["Who were you voting for?"],
-  "everydayThings": [
-    "How do you like the weather today?",
-    "Do you have any pets?",
-    "What were you doing last weekend?"
+  "weather": [
+    "Is it just me, or does it feel unusually warm today?",
+    "Have you been enjoying the sunshine lately?",
+    "Do you prefer hot weather or cold weather?",
+    "It’s been raining a lot this week. Do you like the rain?",
+    "Do you think we’ll get snow this winter?",
+    "Has the weather been affecting your plans lately?",
+    "It’s so windy out there today! How do you deal with wind?",
+    "Do you think this heatwave will last much longer?",
+    "What kind of weather do you enjoy the most?",
+    "Isn’t today perfect for a walk outside?"
+  ],
+  "currentEvents": [
+    "Did you hear about the new park they're building?",
+    "Have you been following the local farmer's market?",
+    "Have you checked out that new café downtown?",
+    "Did you see that local art festival happening this weekend?",
+    "Did you hear about the new bike lanes they’re adding?",
+    "There’s a new movie screening in town. Have you heard about it?",
+    "Have you read anything about the local food trucks lately?",
+    "Are you planning to go to the summer concert series in the park?",
+    "Have you seen the new mural they put up on Main Street?",
+    "What do you think about the local sports team’s recent game?"
+  ],
+  "entertainment": [
+    "Watched anything good on Netflix lately?",
+    "What kind of music have you been listening to recently?",
+    "Have you seen any good movies recently?",
+    "Are there any TV shows you’ve been binge-watching?",
+    "What’s the last concert you went to?",
+    "Have you discovered any new artists or bands lately?",
+    "What’s your favorite movie genre?",
+    "Are you excited about any upcoming movie releases?",
+    "What was the last book you read that you really enjoyed?",
+    "Have you ever been to a film festival?"
+  ],
+  "weekendPlans": [
+    "Do you have anything fun planned for the weekend?",
+    "Are you planning to relax this weekend or stay busy?",
+    "What’s your ideal way to spend a weekend?",
+    "Do you usually make plans for the weekend ahead of time?",
+    "Have any interesting weekend activities coming up?",
+    "Are you doing anything exciting this Saturday?",
+    "What’s your favorite thing to do on weekends?",
+    "Any good weekend getaways you’re thinking about?",
+    "Are weekends usually busy for you?",
+    "Do you have a go-to weekend spot?"
+  ],
+  "foodAndDrinks": [
+    "Do you have a favorite restaurant around here?",
+    "What’s your go-to comfort food?",
+    "Have you tried any new recipes lately?",
+    "Do you prefer cooking at home or eating out?",
+    "What’s your favorite type of cuisine?",
+    "Is there a dish you’ve always wanted to learn how to make?",
+    "Do you have a favorite coffee or tea spot?",
+    "What’s the best meal you’ve had recently?",
+    "Do you enjoy trying new foods or do you stick to favorites?",
+    "Are you more of a sweet or savory person when it comes to snacks?"
   ]
 }

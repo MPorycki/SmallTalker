@@ -31,11 +31,19 @@ export default {
     return {
       questionsDb: questions,
       textOutput: 'Your question to ask will appear here!',
-      selectedCategories: ['tech', 'everydayThings', 'politics'],
+      selectedCategories: [
+        'currentEvents',
+        'entertainment',
+        'foodAndDrinks',
+        'weather',
+        'weekendPlans'
+      ],
       categories: [
-        { value: 'tech', text: 'Tech' },
-        { value: 'everydayThings', text: 'Everyday Things' },
-        { value: 'politics', text: 'Politics' }
+        { value: 'currentEvents', text: 'Current Events (Light or Local)' },
+        { value: 'entertainment', text: 'Entertainment' },
+        { value: 'foodAndDrinks', text: 'Food And Drinks' },
+        { value: 'weather', text: 'Weather' },
+        { value: 'weekendPlans', text: 'Weekend Plans' }
       ]
     }
   },
