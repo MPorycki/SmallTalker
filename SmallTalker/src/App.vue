@@ -7,6 +7,9 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+body{
+  height: 100%;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -26,10 +29,6 @@ nav {
 
 nav a.router-link-exact-active {
   color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
 }
 
 nav a {

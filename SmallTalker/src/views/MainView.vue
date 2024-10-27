@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container" style="width: 100%;">
     <!-- Big Label at the Top -->
+     <div class="column is-fullwidth">
     <h1 class="page-title">Small Talker</h1>
 
     <!-- Text Output Box -->
@@ -9,7 +10,7 @@
     </div>
 
     <!-- Button -->
-    <button @click="handleClick">Click Me</button>
+    <button class="button is-primary" @click="handleClick">Click Me</button>
 
     <!-- Label for Checkbox Group -->
     <div class="checkbox-group">
@@ -21,6 +22,7 @@
         {{ option.text }}
       </label>
     </div>
+  </div>
   </div>
 </template>
 
