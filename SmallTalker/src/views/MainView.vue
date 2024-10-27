@@ -82,6 +82,7 @@ export default {
   
 }
 
+
 .page-title {
   font-size: 2em;
   margin-bottom: 20px;
@@ -89,10 +90,15 @@ export default {
 }
 
 .output-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
-  width: 100%; /* Ensure it takes full width of the container */
+  width: 300px; /* Fixed size so that it remains static no matter the text */
+  height: 72px; /* Fixed size so that it remains static no matter the text */
+  overflow: hidden;
   text-align: center;
   background-color: #f9f9f9;
   box-sizing: border-box; /* Include padding in width calculations */
