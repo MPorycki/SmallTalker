@@ -1,28 +1,28 @@
 <template>
   <div class="container" style="width: 100%;">
     <!-- Big Label at the Top -->
-     <div class="column is-fullwidth">
-    <h1 class="page-title">Small Talker</h1>
+    <div class="column is-fullwidth">
+      <h1 class="page-title">Small Talker</h1>
 
-    <!-- Text Output Box -->
-    <div class="output-box">
-      <p>{{ textOutput }}</p>
+      <!-- Text Output Box -->
+      <div class="output-box">
+        <p>{{ textOutput }}</p>
+      </div>
+
+      <!-- Button -->
+      <button class="button is-primary" @click="handleClick">Click Me</button>
+
+      <!-- Label for Checkbox Group -->
+      <div class="checkbox-group">
+        <label class="checkbox-group-label">Available categories:</label>
+
+          <!-- Checkboxes for Multi-Select -->
+          <label v-for="option in categories" :key="option.value" class="checkbox-label">
+            <input type="checkbox" :value="option.value" v-model="selectedCategories" />
+            {{ option.text }}
+          </label>
+      </div>
     </div>
-
-    <!-- Button -->
-    <button class="button is-primary" @click="handleClick">Click Me</button>
-
-    <!-- Label for Checkbox Group -->
-    <div class="checkbox-group">
-      <label class="checkbox-group-label">Available categories:</label>
-
-      <!-- Checkboxes for Multi-Select -->
-      <label v-for="option in categories" :key="option.value" class="checkbox-label">
-        <input type="checkbox" :value="option.value" v-model="selectedCategories" />
-        {{ option.text }}
-      </label>
-    </div>
-  </div>
   </div>
 </template>
 
@@ -79,6 +79,7 @@ export default {
   align-self: center;
   width: 15vw;
   max-width: 600px; /* Adjust this value as needed */
+  
 }
 
 .page-title {
