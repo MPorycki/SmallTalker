@@ -100,7 +100,7 @@ export default {
   height: 72px; /* Fixed size so that it remains static no matter the text */
   overflow: hidden;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #A1FFE8;
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
@@ -110,6 +110,7 @@ button {
   cursor: pointer;
   width: 100%;
   max-width: 300px;
+  background-color: #E8A1FF;
 }
 
 .checkbox-group {
